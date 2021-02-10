@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="src/style.css">
         <link rel="shortcut icon" href="img/icon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="src/js/Maps.js">
         <title>Social Midia</title>
     </head>
 
@@ -17,12 +19,15 @@
             <img src="src/img/Design_sem_nome-removebg-preview.png" alt="">
           </div>
           <div class="menu-section">
-            <nav><ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#bikes">Bikes</a></li>
-              <li><a href="#serv">Serviços</a></li>
-              <li><a href="#contato">Fale conosco</a></li>
-            </ul></nav>
+            <div class="topnav" id="myTopnav">
+              <a href="#home" class="active">Home</a>
+              <a href="#news">News</a>
+              <a href="#contact">Contact</a>
+              <a href="#about">About</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -105,8 +110,9 @@
         
         
         <div class="map-container-app">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.771625327997!2d-34.96531248567103!3d-8.022468782296668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1a30136f42ed%3A0x652fee8af98c81c4!2sAv.%20Dr.%20Belmino%20Correia%2C%201177%20-%20Caxang%C3%A1%2C%20Recife%20-%20PE%2C%2050980-427!5e0!3m2!1spt-BR!2sbr!4v1581464067311!5m2!1spt-BR!2sbr" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <iframe src="Muda()" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
+        <button type="button" onClick="ClearStorage()" target="_top" >Next</button>
       </section>
 
     </main>  
@@ -114,6 +120,16 @@
     <footer class="container">
       <h1> &copy; site de bike </h1>
     </footer> 
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      </script>
   </body>
 
   </html>
