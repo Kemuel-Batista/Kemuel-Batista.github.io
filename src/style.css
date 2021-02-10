@@ -89,82 +89,78 @@ main h1{
 /*=============== 
 CARDS
 ==================*/
-.cards {
-  width: 90%;
-  max-width: 980px;
-  margin: auto;
-  margin-bottom: 3%;
-  margin-top: 10px;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 20px;
-  justify-content: space-between;
-  align-items: center;
+
+.cards
+{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.cards .card
+{
+    position: relative;
+    max-width: 300px;
+    height: 200px;
+    background: rgb(52, 96, 138);
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
 }
 
-.text--medium {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  font-weight: 400;
-  color: #ecf0f1;
+.cards .card:hover
+{
+    height: 350px;
+}
+.cards .card .img
+{
+
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    background-color:rgb(52, 96, 138);
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  background-color: #0d9937;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  justify-content: space-between;
-  align-items: center;
+.cards .card .img .tittle{
+    align-items: center;
+    justify-content: center;
 }
 
-.card:hover {
-  transform: translateY(-7px);
+.cards .card .img img
+{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 4px;
 }
-
-.image {
-  width: 100%;
-  padding-top: 56.25%; /* 16:9 */
-
-  overflow: hidden;
-  position: relative;
+.cards .card .content
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0,3s ease-in-out;
 }
-
-.image img {
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.content {
-  margin: 20px;
-}
-
-.title {
-  margin-bottom: 20px;
-}
-
-.info {
-  display: flex;
-  align-self: end;
-  align-items: center;
-}
-
-.price {
-  margin-left: auto;
-  padding: 5px 20px;
-  border-radius: 20px;
-  background-color: #7159c1;
-  filter: brightness(90%);
-}
-main h1.cards{
-  color: white  ;
-  text-align: center;
-  margin-bottom: 3%;
+.cards .card:hover .content
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
 }
 
 /*Sobre nós*/
