@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap');
+
+:root {
+  --color-input-background: #F8F8FC;
+  --color-line-in-white: #E6E6F0;
+  --color-secundary: #04D361;
+  --color-secundary-dark: #04BF58;
+  --color-text-base: #6A6180;
+}
 
 * {
   margin: 0;
@@ -68,29 +78,6 @@ header .container {
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-  
-  header .bg-image {
-    background-image: url('/src/img/robert-bye-tG36rvCeqng-unsplash.jpg');
-    min-height: 250px;
-  
-    background-position:  bottom 50px;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  .title img {
-    height: 100px;
-    width: 100px;
-    margin-left: 20px;
-  }
-}
-
-@media screen and (max-width: 600px) {
   .topnav.responsive {
     position: relative; 
     margin-right: 20px; 
@@ -107,6 +94,27 @@ header .container {
     display: block;
     text-align: left;
     margin-right: 20px;
+  }
+
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  
+  header .bg-image {
+    background-image: url('/src/img/robert-bye-tG36rvCeqng-unsplash.jpg');
+    min-height: 250px;
+  
+    background-position: bottom 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .title img {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
   }
 }
 
@@ -201,41 +209,83 @@ CARDS
     margin-top: -40px;
     transition-delay: 0.3s;
 }
-
-/*Sobre nós*/
-
-section.sobre{
-  background-color:#F0F0F7; 
-  height: 700px;
-  padding: 40px;
-  margin:0;
-  align-items: center;
-  display:flex;
-  justify-content: space-between;
-  flex-direction: row;
-}
-section.sobre div.text{
-  color: black;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-section.sobre div.text p{
-  text-align: center;
-  margin-top: 2%;
-}
-section.sobre div.text h1{
-  text-align: center;
-}
-
-section.sobre div.image-container-about img {
-  width: 80%;
-}
-
 /*=============== 
 FORM
 ==================*/
+@media screen and (max-width: 600px){
+  section#contact {
+    background: linear-gradient(329.54deg, #AAEBB7 0%,#F0F0F7 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }  
+
+  section#contact .form-container-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  section#contact .form-container-app form {
+    height: 42rem;
+  }
+
+  section#contact .form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  section#contact .input-block input,
+  section#contact .input-block textarea {
+    width: 100%;
+    border-radius: 20px;
+    outline: 0;
+    font: 1rem Poppins;
+    color: var(--color-text-base);
+  }
+
+  section#contact .input-block input {
+    height: 50%;
+    width: 95%;
+    outline: 0;
+    padding: 0 16px;
+    font-size: 12px;
+  }
+
+  section#contact .input-block textarea {
+    min-height: 120px;
+    max-height: 240px;
+    resize: vertical;
+    padding: 16px;
+    line-height: 20px;
+    margin-top: 2%;
+    font-size: 13px;
+  }
+
+  section#contact .input-block label {
+    display: flex;
+    color: #000;
+    margin-bottom: 8px;
+    justify-content: space-between;
+    margin-top: 3%;
+    font: 0.9rem Poppins;
+    margin-top: 20px;
+  }
+
+  section#contact input[type=submit] {
+    width: 70px;
+    height: 2rem;
+    font: 500 0.9rem Archivo;
+  }
+}
+
+@media screen and (max-width: 950px){
+
+}
 
 #contact {
   width: 100%;
@@ -247,21 +297,29 @@ FORM
   background: linear-gradient(329.54deg, #AAEBB7 0%,#F0F0F7 100%);
 }
 
-#contact .form-container-app form {
-  max-width: 980px;
-  width: 75%;
-  background: white;
-  
-  padding: 40px;
-  
+#contact .form-container-app form {  
   box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.15), 
-    0px 10px 20px -10px rgba(0, 0, 0, 0.1)
+    0px 10px 20px -10px rgba(0, 0, 0, 0.1);
+
+  width: 80%;
+  max-width: 980px;
+  height: 28rem;
+  border-radius: 0.8rem;
+  background: var(--color-input-background);
+  border: 1px solid var(--color-line-in-white);
+  outline: 0;
+  padding: 1rem 1.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 #contact h3 {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
   color: #6DAF7C;
   text-align: center;
+  font: 1.6rem Poppins;
 }
 
 .form-group {
@@ -283,6 +341,10 @@ FORM
   background: #6DAF7C;
 }
 
+#contact  #message {
+  margin-top: 20px;
+}
+
 #contact .input-block label {
   display: flex;
   color: #000;
@@ -290,6 +352,7 @@ FORM
   line-height: 20px;  
   justify-content: space-between;
   margin-top: 3%;
+  font: 1rem Poppins;
 }
 
 #contact .input-block label span {
@@ -302,13 +365,15 @@ FORM
 #contact .input-block textarea {
   width: 100%;
   border-radius: 20px;
-  outline: none;
-  color: #5C8599;
+  outline: 0;
+  font: 1rem Poppins;
+  color: var(--color-text-base);
 }
 
 #contact .input-block input {
   height: 60%;
   width: 95%;
+  outline: 0;
   padding: 0 16px;
   font-size: 13px;
 }
@@ -324,12 +389,23 @@ FORM
 }
 
 input[type=submit] {
-  border-radius: 5px;
   border: 1px solid #333;
   background-color: Teal;
   color: #fff;
-  /*height: 30px;
-  width: 46px;*/
+  width: 100px;
+  height: 2.5rem;
+  background: var(--color-secundary);
+  color: var(--color-button-text);
+  border: 0;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font: 500 1rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background-color 0.2s;
+  margin-top: 1.2rem;
 }
 
 footer{

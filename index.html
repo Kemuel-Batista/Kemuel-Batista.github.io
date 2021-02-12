@@ -78,7 +78,7 @@
 
       <section id="contact">
         <div id="contato" class="form-container-app">
-        <form action="email.php" method="post">
+          <form action="email.php" method="post">
             <h3>Entre em contato agora mesmo!</h3>
             <div class="form-group">
               <div class="input-block">
@@ -97,7 +97,7 @@
               </div>
             </div>
 
-            <div class="input-block">
+            <div class="input-block" id="message">
               <label>Mensagem</label>
               <textarea id="texto" name="texto" type="text" maxLength={300} placeholder="Escreva sua Mensagem Aqui"></textarea>
             </div>
@@ -105,31 +105,31 @@
             <div class="form-group">
               <p><input type="submit" onClick="BTEnvia" value="Enviar"></p>
             </div>
-            </form>
+          </form>
         </div>
-        
-        
+
         <div class="map-container-app">
-          <iframe src="Muda()" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            <iframe src="Muda()" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <button type="button" onClick="ClearStorage()" target="_top" >Next</button>
         </div>
-        <button type="button" onClick="ClearStorage()" target="_top" >Next</button>
       </section>
 
-    </main>  
-
-    <footer class="container">
-      <h1> &copy; site de bike </h1>
-    </footer> 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myTopnav");
-        if (x.className === "topnav") {
-          x.className += " responsive";
-        } else {
-          x.className = "topnav";
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
         }
-      }
-      </script>
+        </script>
+
+      <footer class="container">
+        <h1> &copy; site de bike </h1>
+      </footer> 
+    </main>  
   </body>
 
   </html>
