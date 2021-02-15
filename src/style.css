@@ -141,6 +141,7 @@ main h1{
   height: 400px;
   width: '100%';
   background-color: var(--color-advantages-section2);
+  background: linear-gradient(329.54deg, var(--color-advantages-section) 0%,var(--color-advantages-section2) 100%);
   margin-bottom: 20px;
   
   display: flex;
