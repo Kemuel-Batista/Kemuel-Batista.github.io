@@ -200,6 +200,16 @@ main h1{
     align-items: center;
     flex-direction: column;
   }
+  .our-advantages-section #advantages-content h2{
+    font-size: 25px;
+  }
+  .our-advantages-section #advantages-global h4 {
+    font-size: 16px;
+  }
+  .our-advantages-section #advantages-global p {
+    text-align: center;
+    font-size: 14px;
+  }
 }
 /*=============== 
 CARDS
