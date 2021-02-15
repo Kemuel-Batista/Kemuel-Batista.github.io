@@ -6,113 +6,149 @@
         <link rel="stylesheet" href="src/style.css">
         <link rel="shortcut icon" href="img/icon.png" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="src/js/Maps.js">
+        <script src="src/js/Iframe-css.js"></script>
+        <script></script>
         <title>Social Midia</title>
     </head>
 
   <body>
 
-    <header>
-      <div class="bg-image">        
-        <div class="container">
-          <div class="title">
-            <img src="src/img/Design_sem_nome-removebg-preview.png" alt="">
-          </div>
-          <div class="menu-section">
-            <div class="topnav" id="myTopnav">
-              <a href="#home" class="active">Home</a>
-              <a href="#news">News</a>
-              <a href="#contact">Contact</a>
-              <a href="#about">About</a>
-              <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-            </div>
+  <header>
+    <div class="bg-image">        
+      <div class="container">
+        <div class="title">
+          <img src="src/img/Design_sem_nome-removebg-preview.png" alt="">
+        </div>
+        <div class="menu-section">
+          <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+            <a href="#about">About</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
           </div>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <h1>Confira nossos serviços</h1>
+  <main>
+    <div class="our-advantages-section">
+      <div id="advantages-content">
+        <h2>Nossas Vantagens</h2>
+        
+        <div id="advantages-cards">
+          <div id="advantages-global">
+            <img src="src/img/icons/clock-vector.png" alt="Relógio">
+            <h4>Rápidos</h4>
+            <p>Lorem Quaerat porro enim dolorum eius aliquid dolore corporis harum ullam.</p>
+          </div>
 
-        <div class="cards">
-            <div class="card">
-                <div class="img">
-                    <img width="260px" height = "157.07px" src="/src/img/pintar-uma-bike-em-casa-3.jpg  ">
-                    <div class="tittle"><h2>Pintura</h2></div>
-                </div> 
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro 
-                        id similique, deserunt vel soluta fugit velit
-                    </p>  
-                </div>     
-            </div>
+          <div id="advantages-global">
+            <img src="src/img/icons/tools-vector.png" alt="Relógio">
+            <h4>Consertos</h4>
+            <p>Lorem Quaerat porro enim dolorum eius aliquid dolore corporis harum ullam.</p>
+          </div>
 
-            <div class="card">
-                <div class="img">
-                    <img src="/src/img/bicicleta 2.jpg">
-                    <div class="tittle"><h2>Manutenção</h2></div>
-                </div> 
-                <div class="content">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro 
-                        id similique, deserunt vel soluta fugit velit
-                    </p>  
-                </div>     
-            </div>
+          <div id="advantages-global">
+            <img src="src/img/icons/quality-vector.png" alt="Relógio">
+            <h4>Qualidade</h4>
+            <p>Lorem Quaerat porro enim dolorum eius aliquid dolore corporis harum ullam.</p>
+          </div>
 
-            <div class="card">
-                <div class="img">
-                    <img src="/src/img/bicicleta 1.jpg">
-                    <div class="tittle"><h2>Bikes-Prontas</h2></div>
-                </div>   
-                <div class="content">  
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro 
-                        id similique, deserunt vel soluta fugit velit
-                    </p>  
-                </div>     
-            </div>
+          <div id="advantages-global">
+            <img src="src/img/icons/happy-vector.png" alt="Feliz">
+            <h4>Satisfação</h4>
+            <p>Lorem Quaerat porro enim dolorum eius aliquid dolore corporis harum ullam.</p>
+          </div>
 
-        </div> 
+         
 
-      <section id="contact">
-        <div id="contato" class="form-container-app">
-          <form action="email.php" method="post">
-            <h3>Entre em contato agora mesmo!</h3>
-            <div class="form-group">
-              <div class="input-block">
-                <label>Nome</label>
-                <input id="nome" name="nome" type="text" placeholder="Digite Seu Nome" />
-              </div>
-              
-              <div class="input-block">
-                <label>Email</label>
-                <input id="email" name="email" type="email" placeholder="Digite Seu Email" />
-              </div>
-
-              <div class="input-block">
-                <label>Assunto</label>
-                <input id="assunto" name="assunto" type="text" placeholder="Digite o Assunto" />
-              </div>
-            </div>
-
-            <div class="input-block" id="message">
-              <label>Mensagem</label>
-              <textarea id="texto" name="texto" type="text" maxLength={300} placeholder="Escreva sua Mensagem Aqui"></textarea>
-            </div>
-                      
-            <div class="form-group">
-              <p><input type="submit" onClick="BTEnvia" value="Enviar"></p>
-            </div>
-          </form>
+          
         </div>
+      </div>
+    </div>
+
+    <h1>Confira nossos serviços</h1>
+
+    <div class="cards">
+        <div class="card">
+            <div class="img">
+                <img width="260px" height = "157.07px" src="/src/img/pintar-uma-bike-em-casa-3.jpg  ">
+                <div class="tittle"><h2>Pintura</h2></div>
+            </div> 
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro 
+                    id similique, deserunt vel soluta fugit velit
+                </p>  
+            </div>     
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <img src="/src/img/bicicleta 2.jpg">
+                <div class="tittle"><h2>Manutenção</h2></div>
+            </div> 
+            <div class="content">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro 
+                    id similique, deserunt vel soluta fugit velit
+                </p>  
+            </div>     
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <img src="/src/img/bicicleta 1.jpg">
+                <div class="tittle"><h2>Bikes-Prontas</h2></div>
+            </div>   
+            <div class="content">  
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius porro 
+                    id similique, deserunt vel soluta fugit velit
+                </p>  
+            </div>     
+        </div>
+
+    </div> 
+
+    <section id="contact">
+      <div id="contato" class="form-container-app">
+        <form action="email.php" method="post">
+          <h3>Entre em contato agora mesmo!</h3>
+          <div class="form-group">
+            <div class="input-block">
+              <label>Nome</label>
+              <input id="nome" name="nome" type="text" placeholder="Digite Seu Nome" />
+            </div>
+            
+            <div class="input-block">
+              <label>Email</label>
+              <input id="email" name="email" type="email" placeholder="Digite Seu Email" />
+            </div>
+
+            <div class="input-block">
+              <label>Assunto</label>
+              <input id="assunto" name="assunto" type="text" placeholder="Digite o Assunto" />
+            </div>
+          </div>
+
+          <div class="input-block" id="message">
+            <label>Mensagem</label>
+            <textarea id="texto" name="texto" type="text" maxLength={300} placeholder="Escreva sua Mensagem Aqui"></textarea>
+          </div>
+                    
+          <div class="form-group">
+            <p><input type="submit" onClick="BTEnvia" value="Enviar"></p>
+          </div>
+        </form>
+      </div>
 
         <div class="map-container-app">
-            <iframe src="Muda()" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-          </div>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d1245.1211558559469!2d-35.08898201077352!3d-7.788411782967655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m3!3m2!1d-7.788152299999999!2d-35.0886965!4m5!1s0x7ab73b1f9be190b%3A0xfb4f659865241b26!2sR.%20da%20Saudade%2C%20615%2C%20Ara%C3%A7oiaba%20-%20PE%2C%2053690-000!3m2!1d-7.787885299999999!2d-35.088618499999995!5e0!3m2!1spt-BR!2sbr!4v1613151916412!5m2!1spt-BR!2sbr" id="myiFrame" width="600" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" width="500" height="500" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
           <button type="button" onClick="ClearStorage()" target="_top" >Next</button>
         </div>
-      </section>
+    </section>
 
       <script>
         function myFunction() {
