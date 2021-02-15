@@ -313,6 +313,7 @@ CARDS
 .consert-your-bike #consert-content h2 {
   font-family: Poppins;
   font-size: 35px;
+  text-align: center;
 }
 .consert-your-bike #consert-content p {
   font-family: Poppins;
@@ -323,12 +324,33 @@ CARDS
   text-decoration: none;
   color: #fff;
   border-radius: 10px;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 16px;
+  font-size: 17px;
+  border-radius: 10px;
+  margin-top: 15px;
+  background-color:  var(--color-secundary-dark);
+  transition: 0.2s background;
+}
+.consert-your-bike #consert-content a:hover {
+  background-color: var(--color-secundary);
 }
 
 /*=============== 
 FORM
 ==================*/
 @media screen and (max-width: 600px){
+  .consert-your-bike #consert-content h2 {
+    font-size: 28px;
+  }
+  .consert-your-bike #consert-content p {
+    font-size: 18px;
+  }
+  .consert-your-bike #consert-content a {
+    font-size: 14px;
+  }
+
   section#contact {
     background: linear-gradient(329.54deg, #AAEBB7 0%,#F0F0F7 100%);
     display: flex;
