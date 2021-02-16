@@ -21,8 +21,9 @@
 
 body {
   color: #FFF;
-  max-width: 100%;
+  width: 100%;
   overflow-x: hidden;
+  font-family: Poppins;
 }
 
 body, input, button, textarea {
@@ -127,7 +128,6 @@ MAIN
 ==================*/
 
 main {
-  background-color:#252525;
 }
 
 main h1{
@@ -212,79 +212,63 @@ main h1{
     font-size: 14px;
   }
 }
-/*=============== 
-CARDS
-==================*/
-.cards
-{
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 30px;
-}
-.cards .card
-{
-    position: relative;
-    max-width: 300px;
-    height: 200px;
-    background: rgb(52, 96, 138);
-    margin: 30px 10px;
-    padding: 20px 15px;
-    display: flex;
-    flex-direction: column;
-    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-    transition: 0.3s ease-in-out;
+/* New Cards */
+.title {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 20px;
 }
 
-.cards .card:hover
-{
-    height: 350px;
-}
-.cards .card .img
-{
+.moderns-cards-container {
+  width: 100%;
+  height: 500px;
 
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    width: 260px;
-    height: 200px;
-    top: -60px;
-    background-color:rgb(52, 96, 138);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.cards .card .img .tittle{
-    align-items: center;
-    justify-content: center;
+.moderns-cards-container .cards-content {
+  width: 330px;
+  height: 430px;
+  border-radius: 15px;
+  box-shadow: 0 2px 2px rgba(0,0,0, 0.2);
+  overflow: hidden;
+  margin: 20px;
+  text-align: center;
+  transition: all 0.25s;
 }
 
-.cards .card .img img
-{
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 4px;
+.moderns-cards-container .cards-content:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-.cards .card .content
-{
-    position: relative;
-    margin-top: -140px;
-    padding: 10px 15px;
-    text-align: center;
-    color: #111;
-    visibility: hidden;
-    opacity: 0;
-    transition: 0,3s ease-in-out;
+
+.moderns-cards-container .cards-content img {
+  width: 330px;
+  height: 220px;
 }
-.cards .card:hover .content
-{
-    visibility: visible;
-    opacity: 1;
-    margin-top: -40px;
-    transition-delay: 0.3s;
+
+.moderns-cards-container .cards-content h4 {
+  font-weight: 600;
+  color: #000;
+  margin-top: 10px;
+}
+.moderns-cards-container .cards-content p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.moderns-cards-container .cards-content a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db;
 }
 
 /* Consert yout bike */
@@ -342,6 +326,10 @@ CARDS
 FORM
 ==================*/
 @media screen and (max-width: 600px){
+  .moderns-cards-container {
+    flex-direction: column;
+    height: 1300px;
+  }
   .consert-your-bike #consert-content h2 {
     font-size: 28px;
   }
